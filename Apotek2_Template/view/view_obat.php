@@ -1,4 +1,3 @@
-
 <center>
     <h1><b>VIEW OBAT !</b></h1>
     <div class="container-fluid">
@@ -14,7 +13,7 @@
                     <th>Harga Beli</th>
                     <th class=>Stok Obat</th>
                     <th>Keterangan</th>
-                    <th colspan="2">Aksi</th>
+                    <th colspan="2" class="text-center">Aksi</th>
                 </tr>
             </thead>
             <?php
@@ -32,7 +31,7 @@
                 <td><?= $baris['hargabeli'];?></td>
                 <td><?= $baris['stok_obat'];?></td>
                 <td><?= $baris['keterangan'];?></td>
-                <td><a href="../update/edit_obat.php?idobat=<?= $baris['id_obat'];?>"
+                <td><a style="text-decoration: none;" href="../update/edit_obat.php?idobat=<?= $baris['id_obat'];?>"
                         class="btn btn-outline-primary">edit</a></td>
 
                 <?php
@@ -42,7 +41,7 @@
                         
                     if($cek['0']==0){
                     ?>
-                <td><a href="../delete/delete_obat.php?idobat=<?= $baris['id_obat'];?>"
+                <td><a style="text-decoration: none;" href="../delete/delete_obat.php?idobat=<?= $baris['id_obat'];?>"
                         class="btn btn-outline-danger">Delete</a></td>
                 <?php  
                     }else{
@@ -58,6 +57,7 @@
         </table>
 
     </div>
-    <a class="btn btn-outline-primary" href="../add/add_obat.php"> tambah obat</a>
+    <a class="btn btn-outline-primary" style="text-decoration: none;font-size: 30px;"
+        href="dashboard.php?page=tambah_obat"> +
+        tambah obat</a>
 </center>
-

@@ -10,6 +10,12 @@ switch ($_GET['page']) {
     case "pelanggan":
         include_once "view_pelanggan.php";
      break;
+    case "tambah_obat":
+        include_once "../add/add_obat.php";
+     break;
+    case "proses_add_obat":
+        include_once "../add/proses_add_obat.php";
+     break;
 }
 // include_once "../template/konten.php"; //dinamis
 include_once "../template/footer.php";

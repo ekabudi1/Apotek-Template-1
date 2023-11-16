@@ -1,7 +1,7 @@
 <?php
 
-include "../koneksi.php";
-
+// include "../koneksi.php";
+// karena di haedar di dahsboard sudah ada include konseksi.php
 $namalengkap = $_POST['nama_lengkap'];
 $alamat = $_POST['alamat'];
 $telp = $_POST['telp'];

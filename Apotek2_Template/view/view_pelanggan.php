@@ -46,7 +46,6 @@
             }
             ?>
     </table>
-    <button>
-        <a href=""></a>
-    </button>
+    <a class="btn btn-outline-primary mt-4" href="../add/add_pelanggan.php" style="text-decoration: none;"> tambah
+        obat</a>
 </center>

@@ -1,6 +1,7 @@
 <?php
 
-include "../koneksi.php";
+// include "../koneksi.php";
+// karena di haedar di dahsboard sudah ada include konseksi.php
 
 $idsupplier = $_POST['id_supplier'];
 $namaobat = $_POST['nama_obat'];
@@ -18,5 +19,5 @@ if(!$query){
 }else{
     // header('Location:view_obat.php');
     // exit;
-    echo "<script>location.href='../view/view_obat.php';</script>"; //pindah ke halaman view obat ketika berhasil
+    echo "<script>location.href='dashboard.php?page=obat';</script>"; //pindah ke halaman view obat ketika berhasil
 }
