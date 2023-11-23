@@ -15,5 +15,5 @@ $query = mysqli_query($koneksi, "UPDATE tb_pelanggan SET namalengkap='$namalengk
 if(!$query){
     echo "Gagal Mengedit Data Pelanggan ". mysqli_error($koneksi);
 }else{
-    echo "<script>location.href='../view/view_pelanggan.php';</script>";
+    echo "<script>location.href='dashboard.php?page=pelanggan';</script>";
 }

@@ -1,7 +1,7 @@
 <?php
 
-// include "../koneksi.php";
-// karena di haedar di dahsboard sudah ada include konseksi.php
+include "../koneksi.php";
+
 $namalengkap = $_POST['nama_lengkap'];
 $alamat = $_POST['alamat'];
 $telp = $_POST['telp'];
@@ -19,5 +19,5 @@ if(!$query){
 }else{
     // header('Location:view_obat.php');
     // exit;
-    echo "<script>location.href='../view/view_pelanggan.php';</script>"; //pindah ke halaman view pelanggan ketika berhasil
+    echo "<script>location.href='dashboard.php?page=pelanggan';</script>"; //pindah ke halaman view pelanggan ketika berhasil
 }

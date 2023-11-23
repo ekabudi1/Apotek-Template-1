@@ -19,5 +19,5 @@ if(!$query){
 }else{
     // header('Location:view_obat.php');
     // exit;
-    echo "<script>location.href='../view_obat.php';</script>"; //pindah ke halaman view obat ketika berhasil
+    echo "<script>location.href='dashboard.php?page=obat';</script>"; //pindah ke halaman view obat ketika berhasil
 }

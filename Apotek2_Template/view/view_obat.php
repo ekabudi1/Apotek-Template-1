@@ -31,7 +31,8 @@
                 <td><?= $baris['hargabeli'];?></td>
                 <td><?= $baris['stok_obat'];?></td>
                 <td><?= $baris['keterangan'];?></td>
-                <td><a style="text-decoration: none;" href="../update/edit_obat.php?idobat=<?= $baris['id_obat'];?>"
+                <td><a style="text-decoration: none;"
+                        href="dashboard.php?page=edit_obat&idobat=<?= $baris['id_obat'];?>"
                         class="btn btn-outline-primary">edit</a></td>
 
                 <?php
